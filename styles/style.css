@@ -72,6 +72,7 @@ header{
   width: 90%;
   display: flex;
   column-gap: 24px;
+  margin-bottom: 130px;
 }
 
 .world-cup-area nav{
@@ -88,6 +89,7 @@ header{
   text-decoration: none;
   border-radius: 10px;
   text-align: center;
+  width: 252px;
   padding: 17px 0;
   background-color: #FFFFFF;
   color: #161616;
@@ -100,6 +102,43 @@ header{
 }
 
 .blogs{
-  border: 1px solid yellowgreen;
   flex-grow: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+.blog{
+  border: 1px solid #E8E8E8;
+  border-radius: 10px;
+}
+.blog img{
+  width: 100%;
+}
+.blog-info{
+  padding: 20px;
+}
+.transfer-link-btn{
+  text-decoration: none;
+  border: 1px solid #161616;
+  border-radius: 5px;
+  padding: 4px 17px;
+  color: #161616;
+  font-weight: 500;
+}
+.blog-title{
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+.blog-comment{
+  font-size: 16px;
+  color: rgba(22, 22, 22, 0.7);
+}
+.fa-regular.fa-clock{
+  margin-right: 10px;
+}
+.fa-regular.fa-comment-dots{
+  margin-left: 30px;
+  margin-right: 10px;
 }
