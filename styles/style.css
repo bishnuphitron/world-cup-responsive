@@ -8,6 +8,12 @@ body{
   font-family: 'Poppins', sans-serif;
   margin: 0;
 }
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 130px;
+}
 
 /* ----------------
   banner styles 
@@ -57,4 +63,43 @@ header{
 .banner img{
   width: 100%;
   height: 100%;
+}
+
+/* ------------------------
+  world cup detail styles 
+--------------------------- */
+.world-cup-area{
+  width: 90%;
+  display: flex;
+  column-gap: 24px;
+}
+
+.world-cup-area nav{
+  width: 252px;
+  height: 252px;
+  background-color: #161616;
+  border-radius: 10px;
+  padding: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info-link-btn{
+  text-decoration: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: 17px 0;
+  background-color: #FFFFFF;
+  color: #161616;
+  font-size: 20px;
+  font-weight: 500;
+}
+#blog-link-btn{
+  background-color: #DD0000;
+  color: #FFFFFF;
+}
+
+.blogs{
+  border: 1px solid yellowgreen;
+  flex-grow: 1;
 }
