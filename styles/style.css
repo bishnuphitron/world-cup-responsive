@@ -15,7 +15,6 @@ main{
   align-items: center;
 }
 .container{
-  border: 1px solid red;
   width: 90%;
 }
 
@@ -29,14 +28,13 @@ header{
 }
 .banner-area{
   height: 646px;
-  background-color: #161616;
+  background-color: rgba(22, 22, 22, 0.8);
   border-radius: 30px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 .banner-info{
-  border: 1px solid blue;
   width: 520px;
   color: #FFFFFF;
 }
@@ -44,9 +42,13 @@ header{
   font-size: 70px;
   line-height: 80px;
   margin: 0;
+  transition: transform 1s ease-in-out;
 }
+.banner-info h1:hover{
+  transform: translate(60px);
+}
+
 .short-text{
-  border: 1px solid red;
   margin-top: 20px;
   margin-bottom: 25px;
 }
@@ -63,7 +65,6 @@ header{
 }
 
 .banner{
-  border: 1px solid darkorange;
   width: 580px;
   height: 100%;
   display: flex;
@@ -82,10 +83,9 @@ header{
 }
 
 .world-cup-area nav{
-  border: 1px solid salmon;
   width: 252px;
   height: 252px;
-  background-color: #161616;
+  background-color: rgba(22, 22, 22, 0.8);
   border-radius: 10px;
   padding: 33px;
   display: flex;
@@ -110,14 +110,14 @@ header{
 }
 
 .blogs{
-  border: 1px solid darkgoldenrod;
   flex-grow: 1;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
-.blog{
-  border: 1px solid #E8E8E8;
+.blog,
+.match{
+  border: 2px solid #E8E8E8;
   border-radius: 10px;
 }
 .blog img{
@@ -134,8 +134,8 @@ header{
   color: #161616;
   font-weight: 500;
 }
-.blog-title{
-  font-size: 18px;
+.article-title{
+  font-size: 20px;
   font-weight: 600;
   margin-top: 15px;
   margin-bottom: 20px;
@@ -154,6 +154,24 @@ header{
 }
 .view-all{
   display: none;
+}
+
+/* ------------------------
+  upcoming matches styles
+  ------------------------- */
+.country-flag{
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.country-flag img{
+  width: 93px;
+  height: 56px;
+}
+.match-info{
+  text-align: center;
+  color: #4D4D4D;
 }
 /* ----------------
   footer styles 
