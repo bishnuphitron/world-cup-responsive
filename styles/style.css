@@ -103,7 +103,8 @@ header{
   font-size: 20px;
   font-weight: 500;
 }
-#blog-link-btn{
+#blog-link-btn,
+#match-link-btn{
   background-color: #DD0000;
   color: #FFFFFF;
 }
@@ -187,6 +188,17 @@ footer li a{
   text-decoration: none;
   color: #B9B9B9;
   font-weight: 500;
+}
+.social-icons{
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  margin: 40px auto 0;
+
+}
+.fa-brands{
+  font-size: 28px;
+  color: #FFFFFF;
 }
 
 /* -------------------
