@@ -90,7 +90,7 @@ header{
   padding: 33px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  row-gap: 30px;
 }
 .info-link-btn{
   text-decoration: none;
@@ -151,8 +151,8 @@ header{
   margin-left: 30px;
   margin-right: 10px;
 }
-.view-all-btn{
-  /* display: none; */
+.view-all{
+  display: none;
 }
 /* ----------------
   footer styles 
@@ -205,8 +205,8 @@ footer li a{
     margin-top: 28px;
   }
   .banner-info h1{
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 24px;
+    line-height: 34px;
   }
   .short-text{
     margin: 8px 0;
@@ -260,22 +260,18 @@ footer li a{
 
 /* tablet devices */
 @media only screen and (min-width: 688px) and (max-width: 992px) {
-  /* .banner-area{
-    width: 95%;
+  .banner-area{
     height: 398px;
-    justify-content: space-evenly;
   }
-  .banner-info, 
-  .banner,
-  .mini-mini{
-    width: 316px;
+  .banner-info{
+    width: 270px;
   }
-
   .banner-info h1{
     font-size: 40px;
     line-height: 50px;
   }
-  .short-text {
+  .short-text{
+    margin: 10px 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -284,43 +280,44 @@ footer li a{
     padding: 12px;
   }
   .banner{
-    padding-top: 58px;
-  } */
-
-  .world-cup-area{
-    /* row-gap: 30px;
-    flex-direction: column;
-    margin-top: 70px; */
-    /* margin-bottom: 70px; */
+    width: 323px;
   }
-  /* .world-cup-area nav{
+  
+  main{
+    margin: 70px 0;
+  }
+  .world-cup-area{
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .world-cup-area nav{
     width: 100%;
     height: auto;
     background-color: #FFFFFF;
     padding: 0;
     flex-direction: row;
+    justify-content: space-between;
   }
   .info-link-btn{
+    width: 210px;
     border: 1px solid #E8E8E8;
-    width: 220px;
-  } */
-  .blogs{
-    /* flex-grow: 1; */
-    /* display: grid; */
-    /* grid-template-columns: repeat(2, 1fr); */
-    /* gap: 24px; */
   }
-  /* .more-blog{
+  .blogs{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .more-blog{
     display: none;
   }
-  .view-all-btn{
+  .view-all{
     display: block;
+    margin-top: 50px;
+    margin-bottom: 0;
   }
-  .blog img{
-    width: 100%;
-  } */
 
-  /* footer{
-    padding: 70px 0;
-  } */
+  footer{
+    padding: 70px 0px;
+  }
+  footer hr{
+    margin: 30px 0;
+  }
 }
