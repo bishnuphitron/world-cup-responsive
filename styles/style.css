@@ -18,10 +18,6 @@ main{
   border: 1px solid red;
   width: 90%;
 }
-hr{
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  margin: 50px 0;
-}
 
 /* ----------------
   banner styles 
@@ -82,16 +78,16 @@ header{
 --------------------------- */
 .world-cup-area{
   display: flex;
-  /* column-gap: 24px; */ 
+  column-gap: 24px; 
 }
 
 .world-cup-area nav{
+  border: 1px solid salmon;
   width: 252px;
   height: 252px;
   background-color: #161616;
   border-radius: 10px;
   padding: 33px;
-  margin-right: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -167,14 +163,17 @@ footer{
   display: flex;
   justify-content: center;
 }
-.footer-div h2{
+footer h2{
   font-size: 40px;
   font-weight: 600;
   margin: 0;
   text-align: center;
   color: #FFFFFF;
 }
-
+footer hr{
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 50px 0;
+}
 footer ul{
   display: flex;
   justify-content: space-around;
@@ -219,8 +218,43 @@ footer li a{
     padding: 8px 12px;
   }
 
-  .world-cup-area, footer{
-    display: none;
+  main{
+    margin: 24px 0;
+  }
+  .world-cup-area{
+    flex-direction: column;
+    row-gap: 24px;
+  }
+  .world-cup-area nav{
+    width: 100%;
+    height: auto;
+    background-color: #FFFFFF;
+    padding: 0;
+    align-items: center;
+    row-gap: 16px;
+  }
+  .info-link-btn{
+    width: auto;
+    padding: 10px 20px;
+    border: 1px solid #E8E8E8;
+  }
+  .blogs{
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  footer{
+    padding: 24px 0px;
+  }
+  footer h2{
+    font-size: 22px;
+  }
+  footer hr{
+    margin: 24px 0;
+  }
+  footer ul{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
   }
 }
 
